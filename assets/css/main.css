@@ -1562,6 +1562,9 @@ span.num {
 .social-icons li a.linkedin:hover {
   color: #0976b4;
 }
+.social-icons li a.github:hover {
+  color: #4078c0;
+}
 
 .social-icons li a.twitter:hover {
   color: #55acee;
