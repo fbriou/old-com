@@ -1904,3 +1904,8 @@ span.num {
   padding: 15px;
   text-align: center;
 }
+.show-bullet li{
+  list-style-type: disc;
+  margin-left: 40px;
+}
+}
