@@ -790,7 +790,7 @@ $('#contactForm').on('submit', function(e){
 	$.ajax({
 		type: "POST",
 		crossDomain: true,
-		url: "https://fbriou.herokuapp.com/v1/send_mail.json",
+		url: "https://apifbriou.herokuapp.com/v1/send_mail.json",
 		data: data
 	}).done(function(res){
 
