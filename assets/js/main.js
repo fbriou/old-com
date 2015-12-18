@@ -652,33 +652,69 @@ $(window).load(function(){
 			portImgArea = portfolioModal.find('.model-img'),
 			portTitle = portfolioModal.find('.modal-content .title'),
 			portContent = portfolioModal.find('.modal-content .m-content'),
-			portLink = portfolioModal.find('.modal-footer .modal-action');
+			portLink = portfolioModal.find('.modal-footer .modal-action'),
+			portTech = portfolioModal.find('.modal-content .m-tech');
+
+		var portfolioModal2 = $('#portfolioModal2'),
+			portImgArea2 = portfolioModal2.find('.model-img'),
+			portTitle2 = portfolioModal2.find('.modal-content .title'),
+			portContent2 = portfolioModal2.find('.modal-content .m-content'),
+			portLink2 = portfolioModal2.find('.modal-footer .modal-action'),
+			portTech2 = portfolioModal2.find('.modal-content .m-tech');
+
 		
 		$('#protfolio-msnry').delegate('a.modal-trigger', 'click', function(e){
 			e.preventDefault();
 			var $this = $(this);
-			portfolioModal.openModal({
-				dismissible: true,
-				opacity: '.4',
-				in_duration: 400,
-				out_duration: 400,
-				ready: function() {
-					var imgSrc = $this.data('image-source'),
-					title = $this.data('title'),
-					content = $this.data('content'),
-					demoLink = $this.data('demo-link');
+			if ($this.data('modal-type') == "1"){
+				portfolioModal.openModal({
+					dismissible: true,
+					opacity: '.4',
+					in_duration: 400,
+					out_duration: 400,
+					ready: function() {
+						var imgSrc = $this.data('image-source'),
+						title = $this.data('title'),
+						content = $this.data('content'),
+						demoLink = $this.data('demo-link'),
+						tech = $this.data('tech');
+					
+						if ( imgSrc ) {
+							portImgArea.html('<img src="'+imgSrc+'" alt="Portfolio Image" />');
+						};
 
 
-					if ( imgSrc ) {
-						portImgArea.html('<img src="'+imgSrc+'" alt="Portfolio Image" />');
-					};
+						portTitle.text(title);
+						portContent.text(content);
+						portLink.attr('href', demoLink);
+						portTech.text("Tech: "+tech);
+					}
+				});
+			} else if ($this.data('modal-type') == "2") {
+				portfolioModal2.openModal({
+					dismissible: true,
+					opacity: '.4',
+					in_duration: 400,
+					out_duration: 400,
+					ready: function() {
+						var imgSrc = $this.data('image-source'),
+						title = $this.data('title'),
+						content = $this.data('content'),
+						demoLink = $this.data('demo-link'),
+						tech = $this.data('tech');
+						
+
+						if ( imgSrc ) {
+							portImgArea2.html('<img src="'+imgSrc+'" alt="Portfolio Image" />');
+						};
 
 
-					portTitle.text(title);
-					portContent.text(content);
-					portLink.attr('href', demoLink);
-				}
-			});
+						portTitle2.text(title);
+						portContent2.text(content);
+						portTech2.text("Tech: "+tech);
+					}
+				});
+			}
 		});
 	}
 

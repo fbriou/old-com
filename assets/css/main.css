@@ -1155,6 +1155,12 @@ header.nav.hide-menu {
     font-size: 14px;
 }
 
+.m-tech{
+    font-style: italic;
+    color: #A5A5A5;
+    margin-top: 10px;
+}
+
 /* --------------------------------- */
 /* 10. Testimonials Styles
  ----------------------------------- */

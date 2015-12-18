@@ -764,13 +764,9 @@
                 <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
                   <li class="active"><a href="#" data-target="*">All</a>
                   </li>
-                  <li><a href="#" data-target=".category-1">Art</a>
+                  <li><a href="#" data-target=".category-1">Web</a>
                   </li>
-                  <li><a href="#" data-target=".category-2">Accessories</a>
-                  </li>
-                  <li><a href="#" data-target=".category-3">Design</a>
-                  </li>
-                  <li><a href="#" data-target=".category-4">Fashion</a>
+                  <li><a href="#" data-target=".category-2">Design</a>
                   </li>
                 </ul>
               </div>
@@ -779,18 +775,36 @@
         </div>
         <!-- .container end -->
       </div>
+      <!-- MODAL CONTAINERS -->
       <div id="portfolioModal" class="modal white">
         <div class="model-img"></div>
         <div class="modal-content">
-          <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
-          <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
+          <h2 class="title"></h2>
+          <p class="m-content"></p>
+          <p class="m-tech"></p>
         </div>
 
         <div class="modal-footer">
-          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live Demo</a>
+          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">See</a>
           <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
         </div>
       </div>
+
+      <div id="portfolioModal2" class="modal white">
+        <div class="model-img"></div>
+        <div class="modal-content">
+          <h2 class="title"></h2>
+          <p class="m-content"></p>
+          <p class="m-tech"></p>
+        </div>
+
+        <div class="modal-footer">
+          <a class="waves-effect btn-flat brand-text modal-action">Availlable soon</a>
+          <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
+        </div>
+      </div>
+
+      <!-- MODAL CONTAINERS ENDS -->
 
       <div class="portfolio-bottom">
         <div class="container">
@@ -799,13 +813,19 @@
               <ul class="clearfix protfolio-item" id="protfolio-msnry">
               
               <!-- Single Portfolio-->
-                <li class="single-port-item category-1 category-3">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#"> <!-- Portfolio pop-up content-->
+                <li class="single-port-item category-1">
+                  <a href="#portfolioModal2" class="waves-effect waves-block waves-light modal-trigger" 
+                  data-modal-type="2" 
+                  data-image-source="images/p_swelve_manager.png" 
+                  data-title="Swelve Manager" 
+                  data-content="I developed Swelve Manager which is a dedicated webApplication for bar owners who are clients of Swelve. By communicating with the Swelve API, it plays music and allows clients to manage their infomation and notifications" 
+                  data-tech="HTML5, CSS3, AngularJS"> 
+                  <!-- Portfolio pop-up content-->
                     <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio"> <!-- portfolio thumbnail-->
+                      <img src="images/p_swelve_manager_small.png" alt="portfolio"> <!-- portfolio thumbnail-->
                       <div class="protfolio-content waves-effect waves-block waves-light">
                         <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
+                          <h2 class="p-title">Swelve Manager</h2>
                         </div>
                       </div>
                       <div class="p-overlay"></div>
@@ -815,13 +835,21 @@
                 <!--/ single portfolio -->
 
                 <!-- Single Portfolio-->
-                <li class="single-port-item category-2 category-1">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                <li class="single-port-item category-2">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" 
+                  data-modal-type="1" 
+                  data-image-source="images/p_sonar.png" 
+                  data-title="Sonar" 
+                  data-content="I made a mockup for a mobile application project called Sonar. Sonar concept is to enable anyone to have his own free radio channel.
+                  Users can broadcast audio content live to an unlimited audience: they can speak, they can broadcast music they like, they can host talks by inviting listeners to speak remotely and people can react live on the chat of the channel.
+                  It’s like pure freedom of speech." 
+                  data-tech="Sketch, HTML5, CSS3"
+                  data-demo-link="http://enjoysonar.com/">
                     <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio">
+                      <img src="images/p_sonar_small.png" alt="portfolio">
                       <div class="protfolio-content waves-effect waves-block waves-light">
                         <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
+                          <h2 class="p-title">Sonar</h2>
                         </div>
                       </div>
                       <div class="p-overlay"></div>
@@ -831,13 +859,19 @@
                 <!--/ single portfolio -->
 
                 <!-- Single Portfolio-->
-                <li class="single-port-item category-1 category-2">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                <li class="single-port-item category-1">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" 
+                  data-modal-type="1" 
+                  data-image-source="images/p_swelve.png" 
+                  data-title="Swelve" 
+                  data-content="Swelve is a modern Jukebox: the application allows consumers to bars or clubs to connect to the playlist where they are and choose what will be played next." 
+                  data-tech="HTML5, CSS3" 
+                  data-demo-link="http://swelve.com">
                     <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio">
+                      <img src="images/p_swelve_small.png" alt="portfolio">
                       <div class="protfolio-content waves-effect waves-block waves-light">
                         <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
+                          <h2 class="p-title">Swelve</h2>
                         </div>
                       </div>
                       <div class="p-overlay"></div>
@@ -845,58 +879,9 @@
                   </a>
                 </li>
                 <!--/ single portfolio -->
-
-                <!-- Single Portfolio-->
-                <li class="single-port-item category-3">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-                    <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio">
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-                        <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
-                        </div>
-                      </div>
-                      <div class="p-overlay"></div>
-                    </div>
-                  </a>
-                </li>
-                <!--/ single portfolio -->
-
-                <!-- Single Portfolio-->
-                <li class="single-port-item category-1 category-3 category-4">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-                    <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio">
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-                        <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
-                        </div>
-                      </div>
-                      <div class="p-overlay"></div>
-                    </div>
-                  </a>
-                </li>
-                <!--/ single portfolio -->
-
-                <!-- Single Portfolio-->
-                <li class="single-port-item category-2 category-4">
-                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
-                    <div class="protfolio-image">
-                      <img src="http://placehold.it/390x280" alt="portfolio">
-                      <div class="protfolio-content waves-effect waves-block waves-light">
-                        <div class="protfolio-content__inner">
-                          <h2 class="p-title">item name</h2>
-                        </div>
-                      </div>
-                      <div class="p-overlay"></div>
-                    </div>
-                  </a>
-                </li>
-                <!--/ single portfolio -->
-
               </ul>
               <!-- portfolio load more button-->
-              <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>
+              <!-- <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a> -->
             </div>
           </div>
         </div>
