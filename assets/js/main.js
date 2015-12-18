@@ -786,19 +786,18 @@ $('#contactForm').on('submit', function(e){
 			message.removeClass('valid').addClass('invalid');
 		}
 	}
-
+	console.log(data);
 	$.ajax({
 		type: "POST",
-		url: "inc/sendEmail.php",
+		crossDomain: true,
+		url: "https://fbriou.herokuapp.com/v1/send_mail.json",
 		data: data
 	}).done(function(res){
 
-		var response = JSON.parse(res);
-
-		if ( response.OK ) {
-			success(response);
+		if ( res.data.body.message == "success" ) {
+			success(res.data.body.message);
 		} else {
-			error(response);
+			error(res.data.body.message);
 		}
 
 
